@@ -10,7 +10,7 @@ public void draw()
 {   
   background(0); 
 
-  stroke((int)(Math.random()*255),255,(int)(Math.random()*255));   
+  stroke((int)(Math.random()*255),200,(int)(Math.random()*255));   
 
   line(320,480,320,280);   
   drawBranches(320,280,100,3*Math.PI/2);  //will add later 
@@ -35,7 +35,7 @@ public void drawBranches(int x,int y, double branchLength, double angle)
   line(x,y,endx3,endy3);
   line(x,y,endx4,endy4);
   if(branchLength>smallestBranch){
-    stroke((int)(Math.random()*255),255,(int)(Math.random()*255)); 
+    stroke((int)(Math.random()*255),200,(int)(Math.random()*255)); 
   drawBranches(endx1,endy1,branchLength*fractionLength,angle1);
   drawBranches(endx2,endy2,branchLength*fractionLength,angle2);
   drawBranches(endx3,endy3,branchLength*fractionLength,angle3);
